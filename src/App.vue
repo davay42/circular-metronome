@@ -3,21 +3,17 @@ import { RouterLink, RouterView } from 'vue-router'
 import CircleMetronome from '@/components/circle/index.vue'
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <CircleMetronome />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+<template lang="pug">
+header
+  img.logo(alt="Vue logo" src="@/assets/logo.svg" width="125" height="125")
+  .wrapper
+    CircleMetronome
+    nav
+      RouterLink(to="/")
+        | Home
+      RouterLink(to="/about")
+        | About
+RouterView
 </template>
 
 <style>
@@ -26,7 +22,6 @@ import CircleMetronome from '@/components/circle/index.vue'
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 
   font-weight: normal;
 }
@@ -88,7 +83,6 @@ nav a:first-of-type {
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 
   header {
@@ -101,10 +95,6 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   nav {

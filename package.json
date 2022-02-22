@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 5050",
-    "run": "cap run"
+    "run": "cap run",
+    "open": "cap open ios"
   },
   "dependencies": {
     "@capacitor-community/native-audio": "^3.0.1",
