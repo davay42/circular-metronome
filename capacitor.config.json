@@ -1,0 +1,6 @@
+{
+  "appId": "center.chromatone.circular",
+  "appName": "circular-metronome",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
